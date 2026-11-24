@@ -7,13 +7,13 @@ Claude Code plugin marketplace and plugin host.
 Add this marketplace:
 
 ```bash
-/plugin marketplace add ericanderson/claude-plugins
+/plugin marketplace add ericanderson/claude-code-plugins
 ```
 
 Install a plugin:
 
 ```bash
-/plugin install <plugin-name>@ea-claude
+/plugin install <plugin-name>@ea-cc
 ```
 
 ## Plugins
@@ -30,4 +30,4 @@ Claude Code sessions in this repo get a guard (`.claude/hooks/public-repo-guard.
 ## Maintaining
 
 - Each plugin's `.claude-plugin/plugin.json` is the single source for its `description`; `marketplace.json` entries carry only `name` and `source`.
-- Plugins deliberately have no `version`, so installs track commits and a merge to `main` reaches users without a version bump (`claude plugin update <name>@ea-claude`). Ignore `claude plugin validate`'s "No version specified" warning.
+- Plugins deliberately have no `version`, so installs track commits and a merge to `main` reaches users without a version bump (`claude plugin update <name>@ea-cc`). Ignore `claude plugin validate`'s "No version specified" warning.
